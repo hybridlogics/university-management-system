@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAEA69C5-8845-4384-84BD-9E752E0C721D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CollegeSystem</RootNamespace>
+    <AssemblyName>CollegeSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudents.Designer.cs">
+      <DependentUpon>AddStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudentTransections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudentTransections.Designer.cs">
+      <DependentUpon>AddStudentTransections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assistant_Details2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assistant_Details2.Designer.cs">
+      <DependentUpon>Assistant_Details2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompleteStudentsRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompleteStudentsRecord.Designer.cs">
+      <DependentUpon>CompleteStudentsRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="Deans_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deans_Data.Designer.cs">
+      <DependentUpon>Deans_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department.Designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department_Information.Designer.cs">
+      <DependentUpon>Department_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesExperience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesExperience.Designer.cs">
+      <DependentUpon>EmployeesExperience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlassButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grades.Designer.cs">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraduateAssistants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraduateAssistants.Designer.cs">
+      <DependentUpon>GraduateAssistants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gratuate_Assistant1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gratuate_Assistant1.Designer.cs">
+      <DependentUpon>Gratuate_Assistant1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProffesorOFDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProffesorOFDepartment.Designer.cs">
+      <DependentUpon>ProffesorOFDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sections.Designer.cs">
+      <DependentUpon>Sections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionsCapacityWise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionsCapacityWise.Designer.cs">
+      <DependentUpon>SectionsCapacityWise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShoqDepartmentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShoqDepartmentDetails.Designer.cs">
+      <DependentUpon>ShoqDepartmentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowEmployees.Designer.cs">
+      <DependentUpon>ShowEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowSections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowSections.Designer.cs">
+      <DependentUpon>ShowSections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentGrades.Designer.cs">
+      <DependentUpon>StudentGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentListBasedOnGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentListBasedOnGrades.Designer.cs">
+      <DependentUpon>StudentListBasedOnGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsTransection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsTransection.Designer.cs">
+      <DependentUpon>StudentsTransection.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddStudents.resx">
+      <DependentUpon>AddStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentTransections.resx">
+      <DependentUpon>AddStudentTransections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assistant_Details2.resx">
+      <DependentUpon>Assistant_Details2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompleteStudentsRecord.resx">
+      <DependentUpon>CompleteStudentsRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deans_Data.resx">
+      <DependentUpon>Deans_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department.resx">
+      <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department_Information.resx">
+      <DependentUpon>Department_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesExperience.resx">
+      <DependentUpon>EmployeesExperience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grades.resx">
+      <DependentUpon>Grades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraduateAssistants.resx">
+      <DependentUpon>GraduateAssistants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gratuate_Assistant1.resx">
+      <DependentUpon>Gratuate_Assistant1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProffesorOFDepartment.resx">
+      <DependentUpon>ProffesorOFDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sections.resx">
+      <DependentUpon>Sections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionsCapacityWise.resx">
+      <DependentUpon>SectionsCapacityWise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShoqDepartmentDetails.resx">
+      <DependentUpon>ShoqDepartmentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowEmployees.resx">
+      <DependentUpon>ShowEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowSections.resx">
+      <DependentUpon>ShowSections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentGrades.resx">
+      <DependentUpon>StudentGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentListBasedOnGrades.resx">
+      <DependentUpon>StudentListBasedOnGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsTransection.resx">
+      <DependentUpon>StudentsTransection.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
